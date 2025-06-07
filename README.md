@@ -13,6 +13,11 @@ This repository contains a collection of self-hosted tools and services that can
 
 - [Centrifugal](https://github.com/centrifugal/centrifugo) - A scalable real-time messaging server.
 
+## Object Storage
+
+- [Garage](https://git.deuxfleurs.fr/Deuxfleurs/garage)
+- [SeaweedFS](https://github.com/seaweedfs/seaweedfs)
+
 ## Secret Management
 
 - [Infisical](https://github.com/Infisical/infisical)
