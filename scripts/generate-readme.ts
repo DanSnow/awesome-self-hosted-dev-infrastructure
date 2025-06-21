@@ -57,6 +57,12 @@ const renderReadme = pipe(
   Effect.andThen((categories) =>
     Effect.promise(() => edge.render('readme', { categories })),
   ),
+  Effect.map((readmeContent) => {
+    // Replace instances of double newline followed by a list item marker
+    // with a single newline followed by a list item marker.
+    // This targets the extra blank line between list items.
+    return readmeContent.replace(/\n\n- /g, '\n- ');
+  }),
 );
 
 const main = pipe(
