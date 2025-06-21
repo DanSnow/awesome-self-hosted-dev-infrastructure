@@ -11,7 +11,7 @@ This repository contains a collection of self-hosted tools and services that can
 
 ## Notification
 
-- [Centrifugal](https://github.com/centrifugal/centrifugo) - A scalable real-time messaging server.
+- [Centrifugo](https://github.com/centrifugal/centrifugo) - A scalable real-time messaging server.
 
 ## Object Storage
 

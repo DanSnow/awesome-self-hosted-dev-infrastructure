@@ -1,0 +1,17 @@
+# Awesome Self-Hosted Dev Infrastructure [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+## What is this?
+
+This repository contains a collection of self-hosted tools and services that can serve as building blocks for your projects.
+
+@each(category in categories)
+## {{ category.category.name }}
+@each(item in category.items)
+@if(item.description)
+- [{{ item.name }}]({{ item.url }}) - {{ item.description }}
+@else
+- [{{ item.name }}]({{ item.url }})
+@end
+@end
+
+@end

@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Feature Flags
+items:
+  - name: Flipt
+    url: https://github.com/flipt-io/flipt
+    description: A feature flagging service.
+  - name: Unleash
+    url: https://github.com/Unleash/unleash

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Webhook
+items:
+  - name: Svix
+    url: https://github.com/svix/svix-webhooks
+    description: A service for sending webhooks.

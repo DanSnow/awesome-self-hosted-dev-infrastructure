@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Object Storage
+items:
+  - name: Garage
+    url: https://git.deuxfleurs.fr/Deuxfleurs/garage
+  - name: SeaweedFS
+    url: https://github.com/seaweedfs/seaweedfs

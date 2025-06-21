@@ -1,0 +1,29 @@
+{
+  "name": "awesome-self-hosted-dev-infrastructure",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "generate-schema": "tsx scripts/generate-schema.ts",
+    "generate-readme": "tsx scripts/generate-readme.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.4",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.3",
+    "edge.js": "^6.2.1",
+    "effect": "^3.16.8",
+    "js-yaml": "^4.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.85.2",
+    "@effect/platform-node": "^0.86.4"
+  }
+}
