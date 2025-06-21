@@ -5,3 +5,6 @@ items:
   - name: Svix
     url: https://github.com/svix/svix-webhooks
     description: A service for sending webhooks.
+  - name: Outpost
+    url: https://github.com/hookdeck/outpost
+    description: Open Source Outbound Webhooks and Event Destinations Infrastructure.

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Authorization
+items:
+  - name: Permify
+    url: https://github.com/Permify/permify
+    description: An open-source authorization as a service inspired by Google Zanzibar.

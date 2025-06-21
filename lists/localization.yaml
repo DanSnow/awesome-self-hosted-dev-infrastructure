@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Localization
+items:
+  - name: tolgee-platform
+    description: Developer & translator friendly web-based localization platform.
+    url: https://github.com/tolgee/tolgee-platform

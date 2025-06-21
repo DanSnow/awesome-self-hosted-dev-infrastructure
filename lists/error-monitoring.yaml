@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Error Monitoring
+items:
+  - name: Sentry (Self-Hosted)
+    url: https://github.com/getsentry/self-hosted
+    description: Sentry, packaged up for low-volume deployments and proofs-of-concept.
+  - name: HyperDX
+    url: https://github.com/hyperdxio/hyperdx
+    description: An open source observability platform unifying session replays, logs, metrics, traces and errors powered by Clickhouse and OpenTelemetry.

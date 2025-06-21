@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Web Analytics
+items:
+  - name: Matomo
+    url: https://github.com/matomo-org/matomo
+    description: Matomo is an open-source alternative to Google Analytics, giving you complete control and built-in privacy.

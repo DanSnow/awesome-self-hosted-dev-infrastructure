@@ -6,3 +6,6 @@ items:
     url: https://git.deuxfleurs.fr/Deuxfleurs/garage
   - name: SeaweedFS
     url: https://github.com/seaweedfs/seaweedfs
+  - name: MinIO
+    url: https://github.com/minio/minio
+    description: MinIO is an S3 compatible object store, open sourced under GNU AGPLv3 license.

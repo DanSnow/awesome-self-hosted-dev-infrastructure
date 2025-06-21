@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Workflow Orchestration
+items:
+  - name: inngest
+    description: The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverless, servers, or the edge.
+    url: https://github.com/inngest/inngest
