@@ -18,6 +18,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.0.4
         version: 2.0.4
+      '@effect/language-service':
+        specifier: ^0.21.7
+        version: 0.21.7
       '@tsconfig/node22':
         specifier: ^22.0.2
         version: 22.0.2
@@ -119,6 +122,9 @@ packages:
         optional: true
       lmdb:
         optional: true
+
+  '@effect/language-service@0.21.7':
+    resolution: {integrity: sha512-XUQAAz7zAOdev/hPpwSnPEjqs2qflbHFOoEDK7SsV64LuGd2/QwbvEUCnJai1i9CfAqaMlGA59hG2bgC8FB9IA==}
 
   '@effect/platform-node-shared@0.40.4':
     resolution: {integrity: sha512-EfnRTSHKs33OTfKN9pF+G2AyxMXm/+4rKrGM8yEw56Ij6QV5dq2g28yi0eOH7BytvilnreVmcbAec7M77EArgg==}
@@ -734,6 +740,8 @@ snapshots:
       '@effect/platform': 0.85.2(effect@3.16.8)
       effect: 3.16.8
       uuid: 11.1.0
+
+  '@effect/language-service@0.21.7': {}
 
   '@effect/platform-node-shared@0.40.4(@effect/cluster@0.39.4(@effect/platform@0.85.2(effect@3.16.8))(@effect/rpc@0.62.4(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(@effect/sql@0.38.2(@effect/experimental@0.49.2(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(@effect/workflow@0.2.4(@effect/platform@0.85.2(effect@3.16.8))(@effect/rpc@0.62.4(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(effect@3.16.8))(effect@3.16.8))(@effect/platform@0.85.2(effect@3.16.8))(@effect/rpc@0.62.4(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(@effect/sql@0.38.2(@effect/experimental@0.49.2(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(@effect/platform@0.85.2(effect@3.16.8))(effect@3.16.8))(effect@3.16.8)':
     dependencies:

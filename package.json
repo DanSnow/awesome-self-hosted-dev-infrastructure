@@ -13,6 +13,7 @@
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@biomejs/biome": "^2.0.4",
+    "@effect/language-service": "^0.21.7",
     "@tsconfig/node22": "^22.0.2",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.0.3",
