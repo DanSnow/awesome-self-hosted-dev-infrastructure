@@ -20,6 +20,19 @@ const listFiles = pipe(
   Effect.map(Array.filter((name) => name.endsWith('.yaml'))),
 );
 
+const readFile = Effect.fn('readFile')(function* (filePath: string) {
+  const fs = yield* FileSystem.FileSystem;
+  return yield* fs.readFileString(filePath);
+});
+
+const writeFile = Effect.fn('writeFile')(function* (
+  filePath: string,
+  content: string,
+) {
+  const fs = yield* FileSystem.FileSystem;
+  return yield* fs.writeFileString(filePath, content);
+});
+
 const readLists = pipe(
   listFiles,
   Effect.flatMap((files) =>
@@ -27,10 +40,7 @@ const readLists = pipe(
       files,
       Array.map((file) =>
         Effect.gen(function* () {
-          const fs = yield* FileSystem.FileSystem;
-          const fileContent = yield* fs.readFileString(
-            path.join(listsDir, file),
-          );
+          const fileContent = yield* readFile(path.join(listsDir, file));
           const parsedYaml = yaml.load(fileContent);
           // Validate with Effect schema
           const validatedData = yield* decodeList(parsedYaml);
@@ -54,9 +64,7 @@ const readLists = pipe(
 
 const renderReadme = pipe(
   readLists,
-  Effect.andThen((categories) =>
-    Effect.promise(() => edge.render('readme', { categories })),
-  ),
+  Effect.andThen((categories) => edge.render('readme', { categories })),
   Effect.map((readmeContent) => {
     // Replace instances of double newline followed by a list item marker
     // with a single newline followed by a list item marker.
@@ -69,8 +77,7 @@ const main = pipe(
   renderReadme,
   Effect.flatMap((readme) =>
     Effect.gen(function* () {
-      const fs = yield* FileSystem.FileSystem;
-      yield* fs.writeFileString(readmePath, readme);
+      yield* writeFile(readmePath, readme);
       yield* Console.log('README.md generated successfully.');
     }),
   ),
