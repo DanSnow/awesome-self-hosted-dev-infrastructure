@@ -1,18 +1,23 @@
 {
   "name": "awesome-self-hosted-dev-infrastructure",
   "version": "1.0.0",
-  "description": "",
   "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "scripts": {
     "generate-schema": "tsx scripts/generate-schema.ts",
-    "generate-readme": "tsx scripts/generate-readme.ts"
+    "generate-readme": "tsx scripts/generate-readme.ts",
+    "lint": "oxlint",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b",
+  "dependencies": {
+    "@effect/platform": "^0.96.2",
+    "@effect/platform-node": "^0.107.0"
+  },
   "devDependencies": {
-    "@biomejs/biome": "^2.0.4",
     "@effect/language-service": "^0.86.3",
     "@tsconfig/node22": "^22.0.5",
     "@types/js-yaml": "^4.0.9",
@@ -20,11 +25,11 @@
     "edge.js": "^6.5.1",
     "effect": "^3.21.4",
     "js-yaml": "^5.2.1",
+    "oxfmt": "^0.57.0",
+    "oxlint": "^1.72.0",
+    "oxlint-tsgolint": "^0.24.0",
     "tsx": "^4.22.5",
     "typescript": "^6.0.3"
   },
-  "dependencies": {
-    "@effect/platform": "^0.96.2",
-    "@effect/platform-node": "^0.107.0"
-  }
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
 }
