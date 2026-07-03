@@ -23,6 +23,7 @@ This repository contains a collection of self-hosted tools and services that can
 
 ## Newsletter
 - [listmonk](https://github.com/knadh/listmonk) - High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app.
+- [Mautic](https://www.mautic.org) - Open-source, self-hostable marketing automation platform for campaigns, segmentation, and customer journeys.
 
 ## Notification
 - [Centrifugo](https://github.com/centrifugal/centrifugo) - A scalable real-time messaging server.
