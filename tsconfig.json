@@ -1,6 +1,7 @@
 {
   "extends": ["@tsconfig/node22/tsconfig.json"],
   "compilerOptions": {
-    "plugins": [{ "name": "@effect/language-service" }]
+    "plugins": [{ "name": "@effect/language-service" }],
+    "types": ["node"]
   }
 }

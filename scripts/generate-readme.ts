@@ -1,8 +1,15 @@
 import * as path from 'node:path';
-import { FileSystem } from '@effect/platform';
 import { NodeFileSystem } from '@effect/platform-node';
 import { Edge } from 'edge.js';
-import { Array, Console, Effect, Order, pipe, Schema } from 'effect';
+import {
+  Array,
+  Console,
+  Effect,
+  Order,
+  pipe,
+  Schema,
+  FileSystem,
+} from 'effect';
 import * as yaml from 'js-yaml';
 import { ListFileSchema } from './lib/schemas'; // Assuming schemas.ts is in src/
 
@@ -12,7 +19,7 @@ const readmePath = path.join(__dirname, '../README.md');
 const edge = Edge.create();
 edge.mount(path.join(__dirname, '../templates'));
 
-const decodeList = Schema.decodeUnknown(ListFileSchema);
+const decodeList = Schema.decodeUnknownEffect(ListFileSchema);
 
 const listFiles = pipe(
   FileSystem.FileSystem,
@@ -47,15 +54,15 @@ const readLists = pipe(
           return validatedData;
         }),
       ),
-      Effect.allWith({ concurrency: 'unbounded' }),
+      (effect) => Effect.all(effect, { concurrency: 'unbounded' }),
     ),
   ),
   Effect.map((lists) =>
     Array.sort(
       lists,
-      Order.struct({
-        category: Order.struct({
-          name: Order.string,
+      Order.Struct({
+        category: Order.Struct({
+          name: Order.String,
         }),
       }),
     ),
@@ -64,7 +71,9 @@ const readLists = pipe(
 
 const renderReadme = pipe(
   readLists,
-  Effect.andThen((categories) => edge.render('readme', { categories })),
+  Effect.flatMap((categories) =>
+    Effect.tryPromise(() => edge.render('readme', { categories })),
+  ),
   Effect.map((readmeContent) => {
     // Replace instances of double newline followed by a list item marker
     // with a single newline followed by a list item marker.

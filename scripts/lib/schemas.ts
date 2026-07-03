@@ -1,4 +1,4 @@
-import { JSONSchema, Schema } from 'effect';
+import { Schema } from 'effect';
 
 // Schema for a single item in the 'items' list
 const ListItemSchema = Schema.Struct({
@@ -20,6 +20,6 @@ export { ListFileSchema, ListItemSchema };
 
 // Generate and log the JSON schema
 
-const ListFileJsonSchema = JSONSchema.make(ListFileSchema);
+const ListFileJsonSchema = Schema.toJsonSchemaDocument(ListFileSchema);
 
 console.log(JSON.stringify(ListFileJsonSchema, null, 2));
