@@ -5,3 +5,6 @@ items:
   - name: inngest
     description: The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverless, servers, or the edge.
     url: https://github.com/inngest/inngest
+  - name: restate
+    description: A platform for building resilient applications with durable execution, tolerating infrastructure faults without extra complexity.
+    url: https://github.com/restatedev/restate

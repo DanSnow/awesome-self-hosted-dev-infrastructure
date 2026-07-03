@@ -47,3 +47,4 @@ This repository contains a collection of self-hosted tools and services that can
 
 ## Workflow Orchestration
 - [inngest](https://github.com/inngest/inngest) - The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverless, servers, or the edge.
+- [restate](https://github.com/restatedev/restate) - A platform for building resilient applications with durable execution, tolerating infrastructure faults without extra complexity.
