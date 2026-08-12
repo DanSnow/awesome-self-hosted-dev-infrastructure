@@ -48,3 +48,4 @@ This repository contains a collection of self-hosted tools and services that can
 ## Workflow Orchestration
 - [inngest](https://github.com/inngest/inngest) - The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverless, servers, or the edge.
 - [restate](https://github.com/restatedev/restate) - A platform for building resilient applications with durable execution, tolerating infrastructure faults without extra complexity.
+- [n8n Uptime Ping Alert](https://github.com/DeusAcc/n8n-uptime-ping-alert) - Free, self-hosted n8n workflow: checks a site every 5 minutes and alerts on Telegram only on state change (up/down).
