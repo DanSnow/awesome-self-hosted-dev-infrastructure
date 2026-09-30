@@ -32,6 +32,9 @@ This repository contains a collection of self-hosted tools and services that can
 - [SeaweedFS](https://github.com/seaweedfs/seaweedfs)
 - [MinIO](https://github.com/minio/minio) - MinIO is an S3 compatible object store, open sourced under GNU AGPLv3 license.
 
+## PaaS / App Hosting
+- [Peon](https://github.com/Peon-sh/Peon) - Open-source self-hosted Docker PaaS. Deploy Git apps, Docker Compose, databases, and static sites to your own servers (Vercel/Heroku alternative) with project RBAC, audit logs, and MCP.
+
 ## Secret Management
 - [Infisical](https://github.com/Infisical/infisical)
 
