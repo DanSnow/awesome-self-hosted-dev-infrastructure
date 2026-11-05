@@ -5,3 +5,6 @@ items:
   - name: tolgee-platform
     description: Developer & translator friendly web-based localization platform.
     url: https://github.com/tolgee/tolgee-platform
+  - name: Weblate
+    url: https://github.com/WeblateOrg/weblate
+    description: Web based localization tool with tight version control integration.

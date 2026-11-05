@@ -5,3 +5,6 @@ items:
   - name: Centrifugo
     url: https://github.com/centrifugal/centrifugo
     description: A scalable real-time messaging server.
+  - name: Sockudo
+    url: https://github.com/sockudo/sockudo
+    description: A fast, Pusher-compatible real-time WebSocket server written in Rust.

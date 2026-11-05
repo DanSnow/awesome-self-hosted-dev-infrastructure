@@ -5,3 +5,9 @@ items:
   - name: Permify
     url: https://github.com/Permify/permify
     description: An open-source authorization as a service inspired by Google Zanzibar.
+  - name: Open Policy Agent
+    url: https://github.com/open-policy-agent/opa
+    description: An open source, general-purpose policy engine.
+  - name: OpenFGA
+    url: https://github.com/openfga/openfga
+    description: A high-performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar.

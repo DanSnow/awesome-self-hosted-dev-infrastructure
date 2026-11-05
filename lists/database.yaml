@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Database
+items:
+  - name: Apache AGE
+    url: https://github.com/apache/age
+    description: A graph database extension for PostgreSQL optimized for fast analysis and real-time data processing.
+  - name: TimescaleDB
+    url: https://github.com/timescale/timescaledb
+    description: A time-series database for high-performance real-time analytics, packaged as a Postgres extension.
+  - name: FalkorDB
+    url: https://github.com/FalkorDB/falkordb
+    description: A fast graph database built on GraphBLAS, aimed at knowledge graphs for LLMs (GraphRAG).

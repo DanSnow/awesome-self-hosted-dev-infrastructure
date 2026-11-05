@@ -8,3 +8,6 @@ items:
   - name: HyperDX
     url: https://github.com/hyperdxio/hyperdx
     description: An open source observability platform unifying session replays, logs, metrics, traces and errors powered by Clickhouse and OpenTelemetry.
+  - name: Rustrak
+    url: https://github.com/rustrak/rustrak
+    description: A self-hosted Sentry alternative written in Rust, compatible with the Sentry SDKs, covering error tracking, performance, logs and AI agent traces.

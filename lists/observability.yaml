@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schemas/list-schema.json
+category:
+  name: Observability
+items:
+  - name: OpenObserve
+    url: https://github.com/openobserve/openobserve
+    description: An open source observability platform for logs, metrics, traces, RUM, session replay and LLM observability, deployable as a single binary.
+  - name: Maple
+    url: https://github.com/MapleTechLabs/maple
+    description: An OpenTelemetry observability platform.
+  - name: SigNoz
+    url: https://github.com/SigNoz/signoz
+    description: An open-source, OpenTelemetry-native observability platform combining logs, metrics, traces, APM and infrastructure monitoring.
