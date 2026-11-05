@@ -14,21 +14,21 @@
     "format:check": "oxfmt --check ."
   },
   "dependencies": {
-    "@effect/platform-node": "4.0.0-beta.93"
+    "@effect/platform-node": "4.1.2"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.86.3",
-    "@tsconfig/node22": "^22.0.5",
+    "@effect/language-service": "^0.87.5",
+    "@tsconfig/node22": "^22.0.6",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.0.3",
+    "@types/node": "^26.6.6",
     "edge.js": "^6.5.1",
-    "effect": "4.0.0-beta.93",
-    "js-yaml": "^5.2.1",
-    "oxfmt": "^0.57.0",
-    "oxlint": "^1.72.0",
-    "oxlint-tsgolint": "^0.24.0",
-    "tsx": "^4.22.5",
-    "typescript": "^6.0.3"
+    "effect": "4.1.2",
+    "js-yaml": "^5.5.0",
+    "oxfmt": "^0.76.0",
+    "oxlint": "^1.91.0",
+    "oxlint-tsgolint": "^7.0.2005",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   },
-  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
 }
