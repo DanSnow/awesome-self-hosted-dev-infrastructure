@@ -49,6 +49,7 @@ This repository contains a collection of self-hosted tools and services that can
 - [OpenObserve](https://github.com/openobserve/openobserve) - An open source observability platform for logs, metrics, traces, RUM, session replay and LLM observability, deployable as a single binary.
 - [Maple](https://github.com/MapleTechLabs/maple) - An OpenTelemetry observability platform.
 - [SigNoz](https://github.com/SigNoz/signoz) - An open-source, OpenTelemetry-native observability platform combining logs, metrics, traces, APM and infrastructure monitoring.
+- [SiteWatcher](https://github.com/NikKurkov/sitewatcher) - Self-hosted website availability and response-time monitoring with TLS and domain expiry alerts and public status pages.
 
 ## Secret Management
 - [Infisical](https://github.com/Infisical/infisical)
